@@ -16,7 +16,7 @@ class Bomb extends Component {
 
   componentDidMount() {
     this.interval = setInterval(() => {
-      this.setState({count : this.state.count + 1})
+      this.setState({...this.state, count : this.state.count + 1})
     }, 1000)
   }
 
